@@ -1,0 +1,192 @@
+
+/*header*/
+
+ h1 {
+    font-family: 'Noto Sans', sans-serif;
+    color: darkslategray;
+    margin-left: 50px;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+/*grey background*/
+
+ul {
+    list-style-type: none;
+ 
+}
+
+#users {
+    height: 100vh;
+    width: 70%;
+    background-color: #f8f8f8;
+    margin-left: 7%;
+    padding-top: 20px;
+}
+
+/*uppercase*/ 
+
+ p::first-letter {
+    text-transform: uppercase;
+}
+
+
+
+.main h2 {
+    color: black;
+    font-size: 1.2em;
+     text-align: center;
+  }
+
+  .main img {
+      margin-top: -50px;
+  }
+
+  li p {
+      margin-left: 30px;
+      color: #bdbdbd;
+     text-align: center;
+     margin-top: -1px;
+  }
+li span {
+    color: #bdbdbd;
+    margin-left: 10px;
+}
+
+#users li {
+    background-color: #fefefe;
+    margin: 10px;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid darkslategray;
+    float: left;
+    border-radius: 5px;
+}
+li img {
+    width: 20%;
+    border-radius: 50%;
+}
+
+/*modal*/ 
+#close {
+    float: right;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: darkslategray;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+#modal-picture {
+    width: 150px;
+    border-radius: 50%;
+    margin-left: 100px;
+}
+
+
+
+.modal h2 {
+    font-family: 'Noto Sans', sans-serif;
+    color: darkslategray;
+    text-align: center;
+    font-size: 1.1em;
+    margin-right: 12px;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    width: 330px;
+    border-radius: 5px;
+}
+.modal span {
+   margin-left: 60px;
+    color: grey;
+}
+
+
+
+.overlay {
+    z-index: 10;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    display: block;  
+    background: rgba(0,0,0,0.5);
+  }
+  
+  
+
+#location {
+    margin-left: 60px;
+    margin-top: -10px;
+}
+.modal p {
+    color: grey;
+    margin-left: 130px;
+}
+
+@media (min-width: 768px) {
+
+   
+     #users li {
+         width: 25%;
+     }
+   
+    li img {
+        border-radius: 50%;
+    }
+    #users ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+       }
+
+    .main h2 {
+        color:black; 
+      font-size: 1.1em;
+      margin-left: 80px;
+    }
+    
+    
+      .main img {
+         width: 30%;
+      }
+    
+      li p {
+        margin-left: 30px;
+      }
+
+
+     li span {
+       
+        float: right;
+        padding-bottom: -20px;
+       
+      }
+    
+   
+/*grey background*/
+
+#users {
+    height: 100vh;
+    width: 80%;
+    background-color: #f8f8f8;
+    padding-left: 100px;
+    margin-left: 7%;
+    padding-top: 20px;
+}
+
+
+
+}
+
+
+
