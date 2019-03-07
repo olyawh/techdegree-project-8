@@ -32,26 +32,23 @@ ul {
 
 
 
-.main h2 {
+.info h2 {
     color: black;
     font-size: 1.2em;
      text-align: center;
   }
 
   .main img {
-      margin-top: -50px;
+      float: left;
   }
 
-  li p {
-      margin-left: 30px;
-      color: #bdbdbd;
-     text-align: center;
-     margin-top: -1px;
-  }
-li span {
+.info {
     color: #bdbdbd;
-    margin-left: 10px;
+    float: right;
+    text-align: center;
+  
 }
+
 
 #users li {
     background-color: #fefefe;
@@ -64,10 +61,13 @@ li span {
     border-radius: 5px;
 }
 li img {
-    width: 20%;
+    width: 25%;
     border-radius: 50%;
 }
-
+.info {
+    margin-right: 10px;
+    line-height: 10px;
+}
 /*modal*/ 
 #close {
     float: right;
@@ -79,20 +79,13 @@ li img {
 
 
 #modal-picture {
-    width: 150px;
+    width: 130px;
     border-radius: 50%;
-    margin-left: 100px;
+  
+    
 }
 
 
-
-.modal h2 {
-    font-family: 'Noto Sans', sans-serif;
-    color: darkslategray;
-    text-align: center;
-    font-size: 1.1em;
-    margin-right: 12px;
-}
 
 .modal {
     position: absolute;
@@ -102,13 +95,17 @@ li img {
     background-color: white;
     padding: 20px;
     width: 330px;
+    height: 450px;
     border-radius: 5px;
-}
-.modal span {
-   margin-left: 60px;
+    text-align: center;
     color: grey;
 }
 
+
+.modal h2{
+    text-align: center;
+    color: black;
+}
 
 
 .overlay {
@@ -122,18 +119,23 @@ li img {
     background: rgba(0,0,0,0.5);
   }
   
-  
+ 
 
-#location {
-    margin-left: 60px;
-    margin-top: -10px;
-}
-.modal p {
-    color: grey;
-    margin-left: 130px;
-}
+
 
 @media (min-width: 768px) {
+
+    .main {
+        display: flex;
+        align-items: flex-start;
+    }
+    
+.info {
+    margin-top: -10px;
+    line-height: 15px;
+    margin-left: 3px;
+}
+
 
    
      #users li {
@@ -149,28 +151,20 @@ li img {
         flex-wrap: wrap;
        }
 
-    .main h2 {
+    .info h2 {
         color:black; 
-      font-size: 1.1em;
-      margin-left: 80px;
+      font-size: 1em;
     }
     
+    .info p,
+    .info span {
+        font-size: 0.87em;
+    }
     
       .main img {
          width: 30%;
       }
     
-      li p {
-        margin-left: 30px;
-      }
-
-
-     li span {
-       
-        float: right;
-        padding-bottom: -20px;
-       
-      }
     
    
 /*grey background*/

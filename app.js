@@ -33,11 +33,12 @@ function append(parent, element) {
               div = createUser('div');
               div.className = "main";
               div.innerHTML= `
+              <img src="${userData[i].picture.large}"/>
+              <div class="info">
               <h2 id="fullName">${userData[i].name.first.charAt(0).toUpperCase()}${userData[i].name.first.slice(1)}
               ${userData[i].name.last.charAt(0).toUpperCase()}${userData[i].name.last.slice(1)}</h2>
-              <img src="${userData[i].picture.large}"/>
               <span id="email">${userData[i].email}</span>
-              <p id="city">${userData[i].location.city}</p>`
+              <p id="city">${userData[i].location.city}</p></div> `
               append(card, div);
               users.appendChild(card);
               }
